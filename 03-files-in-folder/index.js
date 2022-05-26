@@ -10,7 +10,7 @@ async function readFolder() {
       { withFileTypes: true });
     for await (const file of files) {
       if (file.isFile()) {
-        fs.stat(`${folderPath}/${file.name}`, (err, stats) => {
+        fs.stat(`${folderPath}/${file.name}`, (stats) => {
           const fileSize = stats.size;
           const fileName = path.parse(`${folderPath}/${file.name}`).name;
           const fileExt = path.parse(`${folderPath}/${file.name}`).ext;
