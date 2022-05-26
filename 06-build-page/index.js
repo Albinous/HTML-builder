@@ -5,7 +5,7 @@ const path = require('path');
 const buildFolder = path.join(__dirname, 'project-dist');
 
 const styles = path.join(__dirname, 'styles');
-const stylesBundle = path.join(__dirname, 'project-dist', 'styles.css');
+const stylesBundle = path.join(__dirname, 'project-dist', 'style.css');
 
 const assets = path.join(__dirname, 'assets');
 const assetsCopy = path.join(__dirname, 'project-dist', 'assets');
